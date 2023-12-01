@@ -4,6 +4,8 @@
   <remote name="grapheneos" fetch="https://github.com/GrapheneOS/" revision="refs/tags/2023112900"/>
   <remote name="grapheneos-gitlab" fetch="https://gitlab.com/grapheneos/" revision="refs/tags/2023112900"/>
   
+  <remote name="sn00x" fetch="https://github.com/sn-00-x/" revision="refs/tags/2023112900-sn"/>
+  
   <default remote="aosp" revision="refs/tags/android-14.0.0_r14" sync-j="4"/>
   
   <project name="adevtool" path="vendor/adevtool" remote="grapheneos" revision="c5b7c3a6098d60f5d7398af530de34c08b24dbc9" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900"/>
@@ -1207,7 +1209,7 @@
   <project name="platform_external_selinux" path="external/selinux" remote="grapheneos" revision="0a8500e02f3c4ec09664f5de4b67358264baffc6" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk"/>
   <project name="platform_external_talkback" path="external/talkback" remote="grapheneos" revision="62d3f1a90da55ad40e9b160758fc4bf03b3e262c" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" clone-depth="1"/>
   <project name="platform_external_vanadium.git" path="external/vanadium" remote="grapheneos-gitlab" revision="f6b3f0d44cc0971a36efaec6e63b08d51e44d630" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" clone-depth="1"/>
-  <project name="platform_frameworks_base" path="frameworks/base" remote="grapheneos" revision="174f75dfbf27904a65c70bb8b3c9ae50839e64e6" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
+  <project name="grapheneos-platform_frameworks_base" path="frameworks/base" remote="sn00x" revision="5f523c886b8fdce56bc39e0925e3c723b03b4acd" upstream="refs/tags/2023112900-sn" dest-branch="refs/tags/2023112900-sn" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_frameworks_ex" path="frameworks/ex" remote="grapheneos" revision="8ec145f6d70fbcfbe18546ab3db1f8a718721fbf" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_frameworks_libs_modules-utils" path="frameworks/libs/modules-utils" remote="grapheneos" revision="a6a7e12e0f232fcdc8a88bc75ff5e80ddf4ccadf" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_frameworks_libs_systemui" path="frameworks/libs/systemui" remote="grapheneos" revision="7a642096f2e7756255a0ece1c5186fe723979c19" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
@@ -1244,7 +1246,7 @@
   <project name="platform_packages_modules_DnsResolver" path="packages/modules/DnsResolver" remote="grapheneos" revision="ca9fc809550c719ffd1804a24f515411a6d9db24" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_HealthFitness" path="packages/modules/HealthFitness" remote="grapheneos" revision="305e03ac00c7492a40272905b45245b4ece692b8" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-fs"/>
   <project name="platform_packages_modules_NetworkStack" path="packages/modules/NetworkStack" remote="grapheneos" revision="a2a1909ba8e26177dc054fef0cf39769976b78a4" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
-  <project name="platform_packages_modules_Permission" path="packages/modules/Permission" remote="grapheneos" revision="6e5c3d3976cf525a637e3ab3e7e831642552ad87" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
+  <project name="grapheneos-platform_packages_modules_Permission" path="packages/modules/Permission" remote="sn00x" revision="52f3b663a40377ed879942588eb2db393b06f0e2" upstream="refs/tags/2023112900-sn" dest-branch="refs/tags/2023112900-sn" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_RemoteKeyProvisioning" path="packages/modules/RemoteKeyProvisioning" remote="grapheneos" revision="be3c33b54d310360eef12528bce68edbecb457d4" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_Uwb" path="packages/modules/Uwb" remote="grapheneos" revision="d790a3cf2d310676a2e81edde7d5dc5166c990a7" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
   <project name="platform_packages_modules_Wifi" path="packages/modules/Wifi" remote="grapheneos" revision="ab2e4d8458c3edbcbdf238d1c2e0060c734bf958" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk-cw-fs,pdk-fs"/>
@@ -1260,7 +1262,7 @@
   <project name="platform_system_librustutils" path="system/librustutils" remote="grapheneos" revision="d431a71283d88a2f77968a3b661f9fd979348ad8" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk"/>
   <project name="platform_system_logging" path="system/logging" remote="grapheneos" revision="bb1f8f282b79247658a20eb6637fa7ae164fe804" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk"/>
   <project name="platform_system_sepolicy" path="system/sepolicy" remote="grapheneos" revision="77231f3df19659fd3e2013c875f873eef8f4a660" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900" groups="pdk"/>
-  <project name="script" remote="grapheneos" revision="6566e619148848571dabd6badcbf322460622dd5" upstream="refs/tags/2023112900" dest-branch="refs/tags/2023112900"/>
+  <project name="grapheneos-script" path="script" remote="sn00x" revision="af593d7c1d42dc2c76f97b99fe1f1bf763b522c0" upstream="refs/tags/2023112900-sn" dest-branch="refs/tags/2023112900-sn"/>
   <project name="toolchain/benchmark" revision="804d5a9aa72d6a52361f1a28ca7cf2488a8fdd3f" upstream="refs/tags/android-14.0.0_r14" dest-branch="refs/tags/android-14.0.0_r14"/>
   <project name="toolchain/pgo-profiles" revision="7060385f0baf572537078d32556eded435005ef7" upstream="refs/tags/android-14.0.0_r14" dest-branch="refs/tags/android-14.0.0_r14" groups="pdk"/>
   <project name="tools/platform-compat" revision="e18bbd58e0697bd3548d476fea8746611bfdf137" upstream="refs/tags/android-14.0.0_r14" dest-branch="refs/tags/android-14.0.0_r14" groups="pdk-cw-fs,pdk-fs,pdk"/>
